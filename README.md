@@ -20,7 +20,7 @@ The target audience would be groups of people who are planning to buy or sell ho
 
 From our recourse, The audience would be able to learn the trend of median housing prices in Seattle area, what some of the areas would be the best to move to or investigate in, which months are the best time to buy or sell the properties, how to pick houses that have greater growth potential, etc. 
 
-### Technical Description###
+### Technical Description ###
 
 For the fianl web format, we plan to use an ipython page in markdown to compile an HTML style report.
 
