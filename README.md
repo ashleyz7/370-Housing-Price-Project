@@ -1,4 +1,4 @@
-# 370-Housing-Price-Project
+# g6-final-proj
 
 ###Project Description###
 
