@@ -108,7 +108,6 @@ def correlation(dataset):
     sns.heatmap(dataset.corr(), annot=True, fmt='1f')
     plt.title('Beijing')
     plt.show()
-correlation(data)
 
 
 # In[13]:
@@ -142,7 +141,6 @@ def month(dataset):
     plt.ylabel('Average House Transaction Price (unit 10k)')
     plt.title('Monthly Distribution of Average House Transaction Price for Beijing' )
     plt.show()
-month(data)
 
 
 # In[16]:
@@ -157,7 +155,6 @@ def year(dataset):
     plt.ylabel('Average House Transaction Price (unit 10k)')
     plt.title('Yearly Distribution of Average House Transaction Price for Beijing' )
     plt.show()
-year(data)
 
 
 # In[17]:
@@ -171,7 +168,6 @@ def price(dataset):
     plt.ylabel('Number of Transaction Occurs at this Price')
     plt.title('Distribution of the housing transaction price for Beijing' )
     plt.show()
-price(data)
 
 
 # In[18]:
@@ -185,7 +181,6 @@ def square_corr(dataset):
     plt.ylabel('House Transaction Price (unit 10k)')
     plt.title('Relationship between square of the house and its transaction price')
     plt.show()
-square_corr(data)
 
 
 # In[20]:
@@ -277,7 +272,6 @@ plt.axhline(0, color='r')
 plt.ylabel('Residuals of Ridge (unit 10k)')
 plt.xlabel('Ridge Predicted Transaction Price (unit 10k)')
 plt.title('Residuals of Ridge Models and the Real Transaction Prices vs. Ridge Predicted Transaction Price')
-plt.show()
 
 
 # In[70]:
@@ -290,7 +284,6 @@ plt.axhline(0, color='r')
 plt.ylabel('Residuals of KNN (unit 10k)')
 plt.xlabel('KNN Predicted Transaction Price (unit 10k)')
 plt.title('Residuals of KNN Models and the Real Transaction Prices vs. KNN Predicted Transaction Price')
-plt.show()
 
 
 # In[71]:
@@ -303,7 +296,6 @@ plt.axhline(0, color='r')
 plt.ylabel('Residuals of SGD (unit 10k)')
 plt.xlabel('SGD Predicted Transaction Price (unit 10k)')
 plt.title('Residuals of SGD Models and the Real Transaction Prices vs. SGD Predicted Transaction Price')
-plt.show()
 
 
 # In[72]:
@@ -316,5 +308,4 @@ plt.plot(predictions_df.realPrices, predictions_df.realPrices, c='r')
 plt.xlabel('Ridge Predicted Transaction Price (unit 10k)')
 plt.ylabel('Real House Transaction Price (unit 10k)')
 plt.title('Relationship between the predictions from models and the real transaction prices')
-plt.show()
 
