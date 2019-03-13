@@ -1,6 +1,8 @@
-# Predicting Changes in the Seattle Housing Market
+# Predicting Changes in the Seattle Housing Market (Updated Version)
 
 ### Project Description ###
+
+#### https://ashleyz7.github.io/370-Housing-Price-Project/ ####
 
 The overall purpose of our research project is to identify some potential factors that have a relationship with the housing price in city of Beijing. After that, we may try to use these factors to predict the transactional housing price of Beijing, which is our outcome of interest.
 
