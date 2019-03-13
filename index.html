@@ -13494,7 +13494,7 @@ $( document ).ready(code_toggle);
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>In our case, we would use a <strong>Regressor</strong> rather than Classifier to do the data modeling, because Classifier is generally used for predicting categorical values (labels, etc.) while Regressors are generally use for predicting quantity, since our outcome of interest is the total transaction price, which is a continuous variable.</p>
+<p>In our case, we would use a <strong>Regressor</strong> rather than Classifier to do the data modeling, because Classifier is generally used for predicting categorical values (labels, etc.) while Regressors are generally use for predicting quantity, since our outcome of interest is the total transaction price, which is a continuous variable. We have labelled features so we will be using supervised learning.</p>
 
 </div>
 </div>
@@ -13502,7 +13502,8 @@ $( document ).ready(code_toggle);
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>We first tried to use the <strong>SGD Regressor</strong>, since our dataset contains over 100k values and <strong>KNN (k nearest neighbors) Regressor</strong>, which is a common algorithm that is used to predict the certain quantifiable outcome of interest, that is to say, to identify the number of any observation (row), we simply need to look at the class of K similar points.  We performed polynomial transformations, cross validation and grid research for those two models, and add a scaler for the KNN. It turns out that the negative MAE for KNN to be -131.315, and the negative MAE for SGD to be -127.842. In order to improve our accuracy, we tried <strong>Ridge Regressor</strong>, which is a technique for analyzing multiple regression data. Similarly, performed polynomial transformations, cross validation and grid research to it and get a negative MAE of -120.09, which proves that it is slightly more accurate compared to the first two modeling strategies we used. We thought the potential reason might be that Rigde Regressor takes account for the multicollinearity.</p>
+<p>We first tried to use the <strong>SGD Regressor</strong>, since our dataset contains over 100k values and <strong>KNN (k nearest neighbors) Regressor</strong>, which is a common algorithm that is used to predict the certain quantifiable outcome of interest, that is to say, to identify the number of any observation (row), we simply need to look at the class of K similar points.  We performed polynomial transformations, cross validation and grid research for those two models, and add a scaler for the KNN. It turns out that the negative MAE for KNN to be 131.315, and the negative MAE for SGD to be 127.842. In order to improve our accuracy, we tried <strong>Ridge Regressor</strong>, which is a technique for analyzing multiple regression data. Similarly, performed polynomial transformations, cross validation and grid research to it and get a negative MAE of 120.09, which proves that it is slightly more accurate compared to the first two modeling strategies we used. We thought the potential reason might be that Rigde Regressor takes account for some of the multicollinearity we saw in the heatmap.</p>
+<p>Due to the sample size of our dataset (150k+ samples), we didn't have the computational power for more hyperparameters in our models' grid search. We attempted to try sampling our data into smaller groups to train (20k samples), but that often excluded certain categories that have less presence in the dataset (e.g. building structure of brick and wood was only present in ~1% of the full dataset).</p>
 
 </div>
 </div>
@@ -13598,7 +13599,7 @@ $( document ).ready(code_toggle);
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Considering the running time, currently we have to use a relatively small range of hyperparameters, and we thought we could use a larger range in the future to help us improve our prediction if there is no running time limitation. To conclude, we hope our audience to take a close look at the house's active days on the this website, the number of people follow this house, the total square of house, the total number of rooms and the height of the house before actually conducting the transaction, which may help them would gain a more insightful opinion about the final transcation price of a house in Beijint.</p>
+<p>Considering the running time, currently we have to use a relatively small range of hyperparameters, and we thought we could use a larger range in the future to help us improve our prediction if there is no running time limitation. To conclude, we hope our audience to take a close look at the house's active days on the this website, the number of people follow this house, the total square of house, the total number of rooms and the height of the house before actually conducting the transaction, which may help them would gain a more insightful opinion about the final transcation price of a house in Beijing.</p>
 
 </div>
 </div>
