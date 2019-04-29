@@ -1,4 +1,4 @@
-# Predicting Changes in the Seattle Housing Market (Updated Version)
+# Predicting Changes in the Beijing Housing Market (Updated Version)
 
 ### Project Description ###
 
